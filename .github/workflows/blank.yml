@@ -94,6 +94,6 @@ jobs:
         AUTHOR: "Vasco Carmona"
       run: |
         artifactName=$(ls *.jar | head -1)
-        mvn deploy -DmuleDeploy -Ddeployment.name="cicd-greeting-vc3105" \
+        mvn deploy -DmuleDeploy -Ddeployment.name="cicd-greeting-message-vc3105" \
         -Dusername=${{ secrets.ANYPOINT_USERNAME }} \
-        -Dpassword=${{ secrets.ANYPOINT_PASSWORD }} 
+        -Dpassword=${{ secrets.ANYPOINT_PASSWORD }} -Dmessage="batatinhas"
