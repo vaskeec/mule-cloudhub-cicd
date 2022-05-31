@@ -61,7 +61,7 @@
 					<cloudHubDeployment>
 					    <!-- Values are fixed for simplicity, change them to properties/parameters instead -->
 						<uri>https://anypoint.mulesoft.com</uri>
-						<businessGroupId>b406d583-b7aa-40e4-a9ac-c3bae6d2e7a9</businessGroupId>
+						<businessGroupId>0dfb7e4e-835f-4e17-b757-909036190504</businessGroupId>
 						<environment>Sandbox</environment>
 						<region>us-east-2</region>
 						<muleVersion>4.4.0</muleVersion>
@@ -73,9 +73,11 @@
 						<deploymentTimeout>600000</deploymentTimeout>
 						<applicationName>${deployment.name}</applicationName>
 						<!-- Authentication to do the deployment -->
-						<connectedAppClientId>${ap.ca.client_id}</connectedAppClientId>
-						<connectedAppClientSecret>${ap.ca.client_secret}</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<!-- <connectedAppClientId>${ap.ca.client_id}</connectedAppClientId> -->
+						<!-- <connectedAppClientSecret>${ap.ca.client_secret}</connectedAppClientSecret> -->
+						<!-- <connectedAppGrantType>client_credentials</connectedAppGrantType> -->
+						<username>${username}</username>
+                       				<password>${password}</password>
 						<properties>
 							<message>${message}</message>
 							<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
